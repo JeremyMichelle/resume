@@ -1,0 +1,44 @@
+<view class="container">
+  <view class="page-body">
+    <!-- <view class="page-section page-section-spacing swiper"> -->
+      <swiper
+        indicator-dots="{{true}}" 
+        vertical="{{true}}"
+        circular="{{true}}">
+        <block>
+          <swiper-item>
+            <view class="swiper-item demo-text-1">
+              <view class='banner1'>
+                <image class='header' src='{{userInfo.avatarUrl}}'></image>
+                <view class='name'>{{userInfo.nickName}}</view>
+                <view class='jobs'>前端工程师@梵软</view>
+              </view>
+            </view>
+          </swiper-item>
+        </block>
+        <block>
+          <swiper-item>
+            <view class="swiper-item demo-text-2">
+              <view class='banner2'>
+                <image class='header' src='{{userInfo.avatarUrl}}'></image>
+                <view class='name'>{{userInfo.nickName}}</view>
+                <view class='jobs'>前端工程师@梵软</view>
+              </view>
+            </view>
+          </swiper-item>
+        </block>
+        <block>
+          <swiper-item>
+            <view class="swiper-item demo-text-3">
+              <view class='banner3'>
+                <image class='header' src='{{userInfo.avatarUrl}}'></image>
+                <view class='name'>{{userInfo.nickName}}</view>
+                <view class='jobs'>前端工程师@梵软</view>
+              </view>
+            </view>
+          </swiper-item>
+        </block>
+      </swiper>
+    <!-- </view> -->
+  </view>
+</view>
