@@ -1,1 +1,5 @@
-{}
+{
+  "usingComponents": {
+    "myself-information": "/components/myself-information/myself-information"
+  }
+}

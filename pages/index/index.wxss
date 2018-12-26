@@ -69,6 +69,10 @@ button:last-child{
   height: 100%;
   /* background-color: #f4f7f9; */
 }
+.margin-lr{
+  margin: 0 100rpx;
+}
+.myself{margin: 0 80rpx;}
 .banner1,.banner2,.banner3{
   position: absolute;
   top: 40%;

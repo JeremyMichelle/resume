@@ -1,0 +1,11 @@
+/* components/myself-information.wxss */
+.myself{padding: 100rpx 80rpx 0rpx 60rpx;color: #333;background-color: #fff;position: relative;margin-top: 80rpx;opacity: .8}
+.header{width: 200rpx;height: 220rpx;position: absolute;right: 80rpx;top: -80rpx;}
+.title{color: #ddd;font-weight: bold;font-size: 50rpx;}
+.title .txt{height: 60rpx;}
+.body{padding: 40rpx 0 120rpx 0;}
+.row{display: flex;padding: 20rpx 0;}
+.col{flex: 1;flex-grow: 1}
+.col-25{width: 25%;}
+.col-r{text-align: right;}
+.padding-tb{padding: 20rpx 0;}

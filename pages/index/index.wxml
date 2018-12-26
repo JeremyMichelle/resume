@@ -8,11 +8,14 @@
         <block>
           <swiper-item>
             <view class="swiper-item demo-text-1">
-              <view class='banner1'>
+              <view class='myself'>
+                <myself-information></myself-information>
+              </view>
+              <!-- <view class='banner1'>
                 <image class='header' src='{{userInfo.avatarUrl}}'></image>
                 <view class='name'>{{userInfo.nickName}}</view>
                 <view class='jobs'>前端工程师@梵软</view>
-              </view>
+              </view> -->
             </view>
           </swiper-item>
         </block>
