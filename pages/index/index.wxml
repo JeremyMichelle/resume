@@ -8,14 +8,23 @@
         <block>
           <swiper-item>
             <view class="swiper-item demo-text-1">
+              <!-- <view class='current'>
+                <text>01</text>
+              </view>
               <view class='myself'>
                 <myself-information></myself-information>
-              </view>
-              <!-- <view class='banner1'>
+              </view> -->
+              <view class='banner1'>
                 <image class='header' src='{{userInfo.avatarUrl}}'></image>
                 <view class='name'>{{userInfo.nickName}}</view>
-                <view class='jobs'>前端工程师@梵软</view>
-              </view> -->
+                <view class='jobs'>前端工程师 <text class='company'>@梵软</text></view>
+                <view class='contact'>
+                  <icon class='iconfont icon-github'></icon>
+                  <icon class='iconfont icon-wechat'></icon>
+                  <icon class='iconfont icon-email'></icon>
+                </view>
+                <view class='resume-pdf'>GUO_ZHUANG_XIN.pdf</view>
+              </view>
             </view>
           </swiper-item>
         </block>
@@ -23,9 +32,7 @@
           <swiper-item>
             <view class="swiper-item demo-text-2">
               <view class='banner2'>
-                <image class='header' src='{{userInfo.avatarUrl}}'></image>
-                <view class='name'>{{userInfo.nickName}}</view>
-                <view class='jobs'>前端工程师@梵软</view>
+                
               </view>
             </view>
           </swiper-item>
@@ -34,9 +41,12 @@
           <swiper-item>
             <view class="swiper-item demo-text-3">
               <view class='banner3'>
-                <image class='header' src='{{userInfo.avatarUrl}}'></image>
-                <view class='name'>{{userInfo.nickName}}</view>
-                <view class='jobs'>前端工程师@梵软</view>
+                <view class='suffer'>工作经验</view>
+                <view class='content'>
+                  <view><official-account></official-account></view>
+                  <view>2</view>
+                  <view>3</view>
+                </view>
               </view>
             </view>
           </swiper-item>

@@ -1,6 +1,6 @@
 <view class='myself'>
   <!-- <view class='header'> -->
-    <image class='header' mode='scaleToFill' src='/images/banner.png'></image>
+  <image class='header' mode='scaleToFill' src='/images/banner.png'></image>
   <!-- </view> -->
   <view class='title'>
     <view class='txt'>MYSELF</view>

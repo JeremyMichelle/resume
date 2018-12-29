@@ -1,17 +1,18 @@
 /**index.wxss**/
 @import "../../weui.wxss";
-page {
-  background-color: #F8F8F8;
-  height: 100%;
-  font-size: 32rpx;
-  line-height: 1.6;
-}
-.page-body{
-  /* padding-top: 60rpx; */
-  height: 100%;
-}
+page {height: 100%;font-size: 32rpx;line-height: 1.6;}
+.page-body{height: 100%;}
 swiper{height: 100%;}
 .demo-text-1{
+  position: relative;
+  align-items: center;
+  justify-content: center;
+  /* background-color: #f4f7f9; */
+  color: #FFFFFF;
+  font-size: 36rpx;
+  background-color: #f4f7f9;
+}
+.demo-text-2{
   position: relative;
   align-items: center;
   justify-content: center;
@@ -19,28 +20,6 @@ swiper{height: 100%;}
   color: #FFFFFF;
   font-size: 36rpx;
 }
-/* .demo-text-1:before{
-  content: 'A';
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-} */
-.demo-text-2{
-  position: relative;
-  align-items: center;
-  justify-content: center;
-  background-color: #2782D7;
-  color: #FFFFFF;
-  font-size: 36rpx;
-}
-/* .demo-text-2:before{
-  content: 'B';
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-} */
 .demo-text-3{
   position: relative;
   align-items: center;
@@ -49,37 +28,24 @@ swiper{height: 100%;}
   color: #353535;
   font-size: 36rpx;
 }
-/* .demo-text-3:before{
-  content: 'C';
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-} */
-
-/* button{
-  margin-bottom: 30rpx;
-}
-button:last-child{
-  margin-bottom: 0;
-} */
 .swiper-item{
   display: block;
   position: relative;
   height: 100%;
   /* background-color: #f4f7f9; */
 }
-.margin-lr{
-  margin: 0 100rpx;
-}
+.margin-lr{margin: 0 100rpx;}
 .myself{margin: 0 80rpx;}
 .banner1,.banner2,.banner3{
-  position: absolute;
-  top: 40%;
-  left: 50%;
-  transform: translate(-50%,-50%);
-  text-align: center;
-}
-.header{border-radius: 50%;width: 200rpx;height: 200rpx;}
-.name{font-size: 50rpx;color: #2e3338}
-.jobs{font-size: 40rpx;color: #4c5c68}
+  position: absolute;top: 50%;left: 50%;transform: translate(-50%,-50%);text-align: center;}
+.current{height: 300rpx;width: 50%;border-bottom:30rpx solid #bbb;border-right:30rpx solid #bbb;}
+.current>text{color: #bbb;font-size: 160rpx;font-weight: bold;margin-left: 80rpx;}
+
+.banner1 .header{border-radius: 50%;width: 256rpx;height: 256rpx;}
+.banner1 .company{font-size: 32rpx;color: #888;}
+.banner1 .name,.banner3 .suffer{font-size: 78rpx;height: 88rpx;line-height: 88rpx;color: #4c5c68;font-weight: bold;}
+.banner1 .jobs{font-size: 38rpx;color: #2e3338;height: 44rpx;line-height: 44rpx;font-weight: bold;}
+.banner1 .contact{margin-top: 32rpx;}
+.banner1 .contact>icon{color: #888;font-size: 34rpx;padding: 0 10rpx;}
+.banner1 .resume-pdf{color: #2e3338;font-size: 19rpx;margin-top: 128rpx;}
+/* 工作经验 */

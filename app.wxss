@@ -1,6 +1,7 @@
 /**app.wxss**/
 .container {
   height: 100%;
+  font-size: 16px;
   /* display: flex;
   flex-direction: column;
   align-items: center;
@@ -8,3 +9,22 @@
   padding: 200rpx 0;
   box-sizing: border-box; */
 } 
+@font-face {
+  font-family: 'iconfont';  /* project id 962799 */
+  src: url('//at.alicdn.com/t/font_962799_k9nh0icvsh.eot');
+  src: url('//at.alicdn.com/t/font_962799_k9nh0icvsh.eot?#iefix') format('embedded-opentype'),
+  url('//at.alicdn.com/t/font_962799_k9nh0icvsh.woff') format('woff'),
+  url('//at.alicdn.com/t/font_962799_k9nh0icvsh.ttf') format('truetype'),
+  url('//at.alicdn.com/t/font_962799_k9nh0icvsh.svg#iconfont') format('svg');
+}
+.iconfont {
+  font-family:"iconfont" !important;
+  font-size:60rpx;
+  font-style:normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+/*本项目使用图标  */
+.icon-github:before{content: '\e712';}
+.icon-wechat:before{content: '\e600';}
+.icon-email:before{content: '\e631';}

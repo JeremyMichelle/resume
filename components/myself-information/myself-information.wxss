@@ -1,6 +1,6 @@
 /* components/myself-information.wxss */
-.myself{padding: 100rpx 80rpx 0rpx 60rpx;color: #333;background-color: #fff;position: relative;margin-top: 80rpx;opacity: .8}
-.header{width: 200rpx;height: 220rpx;position: absolute;right: 80rpx;top: -80rpx;}
+.myself{padding: 100rpx 60rpx 0rpx 60rpx;color: #333;background-color: #fff;position: relative;margin-top: 40rpx;opacity: .8;box-shadow: 0rpx 15rpx 65rpx 4rpx #bbb;}
+.header{width: 200rpx;height: 220rpx;position: absolute;right: 60rpx;box-shadow: 0rpx 15rpx 35rpx 4rpx #bbb;top: -80rpx;}
 .title{color: #ddd;font-weight: bold;font-size: 50rpx;}
 .title .txt{height: 60rpx;}
 .body{padding: 40rpx 0 120rpx 0;}
