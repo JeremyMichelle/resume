@@ -1,51 +1,71 @@
 /**index.wxss**/
 @import "../../weui.wxss";
-page {height: 100%;font-size: 32rpx;line-height: 1.6;}
-.page-body{height: 100%;}
-swiper{height: 100%;}
-.demo-text-1{
-  position: relative;
-  align-items: center;
-  justify-content: center;
-  /* background-color: #f4f7f9; */
-  color: #FFFFFF;
-  font-size: 36rpx;
-  background-color: #f4f7f9;
+.page-header{
+  background-color: #bbb;
+  text-align: center;
 }
-.demo-text-2{
-  position: relative;
-  align-items: center;
-  justify-content: center;
-  background-color: #f4f7f9;
-  color: #FFFFFF;
-  font-size: 36rpx;
+.page-header>view{
+  line-height: 40rpx;
 }
-.demo-text-3{
-  position: relative;
-  align-items: center;
-  justify-content: center;
-  background-color: #F1F1F1;
-  color: #353535;
-  font-size: 36rpx;
+.page-header .header-photo{
+  border-radius: 50%;
+  width: 250rpx;
+  height: 250rpx;
 }
-.swiper-item{
-  display: block;
+.page-header .title{
+  font-size: 40rpx;
+  font-weight: bold;
+  font-family: myFirstFont, "微软雅黑", SimSun, "宋体", sans-serif;
+}
+.page-body>.vessel>.title{
+  margin-top: 100rpx;
+  margin-bottom: 50rpx;
+  text-align: center;
+  font-size: 48rpx;
+  font-weight: bold;
   position: relative;
+}
+.page-body>.vessel>.title>text{
+  display: inline-block;
   height: 100%;
-  /* background-color: #f4f7f9; */
+  /* background-color: rgb(51,122,183); */
+  position: absolute;
+  left: 50%;
+  bottom: -4rpx;
+  /* top: 100rpx; */
+  transform: translateX(-50%);
+  border-bottom: 8rpx solid rgb(51,122,183);
 }
-.margin-lr{margin: 0 100rpx;}
-.myself{margin: 0 80rpx;}
-.banner1,.banner2,.banner3{
-  position: absolute;top: 50%;left: 50%;transform: translate(-50%,-50%);text-align: center;}
-.current{height: 300rpx;width: 50%;border-bottom:30rpx solid #bbb;border-right:30rpx solid #bbb;}
-.current>text{color: #bbb;font-size: 160rpx;font-weight: bold;margin-left: 80rpx;}
+.page-body>.vessel>.content{
+  text-indent: 60rpx;
+  font-size: 28rpx;
+  line-height: 60rpx;
+}
+.page-body>.vessel>.experience>.time{
+  position: relative;
+}
+.page-body>.vessel>.experience>.time>.l{
+  width: 32rpx;
+  height: 32rpx;
+  background-color: #333;
+  display: inline-block;
+  position: absolute;
+  top: 8rpx;
+  left: 0;
+  transform:rotate(45deg);
+}
+.page-body>.vessel>.experience>.time>.r{
+  background: rgb(237,85,101);
+  margin-left: 60rpx;
+  padding:0 10rpx;
+  color: #fff;
 
-.banner1 .header{border-radius: 50%;width: 256rpx;height: 256rpx;}
-.banner1 .company{font-size: 32rpx;color: #888;}
-.banner1 .name,.banner3 .suffer{font-size: 78rpx;height: 88rpx;line-height: 88rpx;color: #4c5c68;font-weight: bold;}
-.banner1 .jobs{font-size: 38rpx;color: #2e3338;height: 44rpx;line-height: 44rpx;font-weight: bold;}
-.banner1 .contact{margin-top: 32rpx;}
-.banner1 .contact>icon{color: #888;font-size: 34rpx;padding: 0 10rpx;}
-.banner1 .resume-pdf{color: #2e3338;font-size: 19rpx;margin-top: 128rpx;}
-/* 工作经验 */
+}
+.page-body>.vessel>.experience>.addr{
+  padding-left: 40rpx;
+  margin-left: 15rpx;
+  margin-bottom: 20rpx;
+  margin-top: 20rpx;
+  border-left: 4rpx solid rgb(51,122,183);
+  font-size: 28rpx;
+}

@@ -1,57 +1,66 @@
 <view class="container">
-  <view class="page-body">
-    <!-- <view class="page-section page-section-spacing swiper"> -->
-      <swiper
-        indicator-dots="{{true}}" 
-        vertical="{{true}}"
-        circular="{{true}}">
-        <block>
-          <swiper-item>
-            <view class="swiper-item demo-text-1">
-              <!-- <view class='current'>
-                <text>01</text>
-              </view>
-              <view class='myself'>
-                <myself-information></myself-information>
-              </view> -->
-              <view class='banner1'>
-                <image class='header' src='{{userInfo.avatarUrl}}'></image>
-                <view class='name'>{{userInfo.nickName}}</view>
-                <view class='jobs'>前端工程师 <text class='company'>@梵软</text></view>
-                <view class='contact'>
-                  <icon class='iconfont icon-github'></icon>
-                  <icon class='iconfont icon-wechat'></icon>
-                  <icon class='iconfont icon-email'></icon>
-                </view>
-                <view class='resume-pdf'>GUO_ZHUANG_XIN.pdf</view>
-              </view>
-            </view>
-          </swiper-item>
-        </block>
-        <block>
-          <swiper-item>
-            <view class="swiper-item demo-text-2">
-              <view class='banner2'>
-                
-              </view>
-            </view>
-          </swiper-item>
-        </block>
-        <block>
-          <swiper-item>
-            <view class="swiper-item demo-text-3">
-              <view class='banner3'>
-                <view class='suffer'>工作经验</view>
-                <view class='content'>
-                  <view><official-account></official-account></view>
-                  <view>2</view>
-                  <view>3</view>
-                </view>
-              </view>
-            </view>
-          </swiper-item>
-        </block>
-      </swiper>
-    <!-- </view> -->
+  <view class="page-header">
+    <view><image class='header-photo' src="{{userInfo.avatarUrl}}"></image></view>
+    <view class='title'>Hello,I'm Rieko</view>
+    <view>Life doesn’t get easier, you just get stronger</view>
+    <view>我叫郭壮鑫</view>
+    <view>一名前端开发工程师</view>
+    <view>r@2019w.cn</view>
+    <view>图标</view>
+  </view>
+  <view class="page-body plr">
+    <view class='vessel'>
+      <view class='title'>关于我<text style='width:124rpx;'></text></view>
+      <!-- <view class='underline'></view> -->
+      <view class='content'>
+					您好，我叫郭壮鑫，坐标广州。
+					我对前端很感兴趣，
+					今后的职业规划是朝着全栈发展，目前在学小程序、AnjularJs,vue。
+					 工作有3年了,本人在公司主要负责整个页面的前端开发，
+					 配合后台人员实现产品前端界面效果与功能。写过响应式页面，
+					 移动端页面，pc端页面。小的来说，商城，企业网站，评论，
+					 地图等都有涉及。
+				</view>
+    </view>
+    <view class='vessel'>
+      <view class='title'>我的经历<text style='width:170rpx;'></text></view>
+      <!-- <view class='underline'></view> -->
+      <view class='experience'>
+					<view class='time'>
+            <text class='l'></text>
+            <text class='r'>2017年/02月初–2017年 /07月初</text>
+          </view>
+          <view class='addr'>
+            <text>在苏州亿柏嘉软件技术有限公司实习技术部/前端工程师本人在该公司主要负责整个页面的前端开发， 配合后台人员实现产品前端界面效果与功能。</text>
+          </view>
+			</view>
+      <view class='experience'>
+					<view class='time'>
+            <text class='l'></text>
+            <text class='r'>2017年/02月初–2017年 /07月初</text>
+          </view>
+          <view class='addr'>
+            <text>在苏州亿柏嘉软件技术有限公司实习技术部/前端工程师本人在该公司主要负责整个页面的前端开发， 配合后台人员实现产品前端界面效果与功能。</text>
+          </view>
+			</view>
+    </view>
+    <view class='vessel'>
+      <view class='title'>我的作品<text style='width:170rpx;'></text></view>
+      <!-- <view class='underline'></view> -->
+      <view class='content'>
+        <swiper
+          indicator-dots="{{indicatorDots}}"
+          autoplay="{{autoplay}}"
+          interval="{{interval}}"
+          duration="{{duration}}"
+        >
+          <block wx:for="{{imgUrls}}">
+            <swiper-item>
+              <image src="{{item}}" class="slide-image" width="355" height="150" />
+            </swiper-item>
+          </block>
+        </swiper>
+			</view>
+    </view>
   </view>
 </view>
