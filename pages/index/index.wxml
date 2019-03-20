@@ -58,7 +58,7 @@
 			</view>
     </view> -->
     <view class='vessel'>
-      <!-- <view class='title'>我的作品<text style='width:170rpx;'></text></view> -->
+      <view class='title'>我的作品<text style='width:170rpx;'></text></view>
       <view class='works'>
         <swiper
           class='swiper'
