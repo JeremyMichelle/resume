@@ -1,17 +1,29 @@
 <view class="container">
+  <!-- <image src='../../images/background.jpeg'></image> -->
   <view class="page-header">
-    <view><image class='header-photo' src="{{userInfo.avatarUrl}}"></image></view>
-    <view class='title'>Hello,I'm Rieko</view>
-    <view>Life doesn’t get easier, you just get stronger</view>
-    <view>我叫郭壮鑫</view>
-    <view>一名前端开发工程师</view>
-    <view>r@2019w.cn</view>
-    <view>图标</view>
+    <view class='mask'>
+      <view class='nav plr'>
+        <icon class='iconfont icon-menu'></icon>
+      </view>
+      <view class='header-photo'>
+        <image src="{{userInfo.avatarUrl}}"></image>
+      </view>
+      <view class='title'>Hello,I'm Rieko</view>
+      <view>Life doesn’t get easier, you just get stronger</view>
+      <view>我叫郭壮鑫</view>
+      <view>一名前端开发工程师</view>
+      <view>r@2019w.cn</view>
+      <view class='weui-flex icon-list'>
+        <view class='weui-flex__item'>1</view>
+        <view class='weui-flex__item'>2</view>
+        <view class='weui-flex__item'>3</view>
+        <view class='weui-flex__item'>4</view>
+      </view>
+    </view>
   </view>
   <view class="page-body plr">
-    <view class='vessel'>
+    <!-- <view class='vessel'>
       <view class='title'>关于我<text style='width:124rpx;'></text></view>
-      <!-- <view class='underline'></view> -->
       <view class='content'>
 					您好，我叫郭壮鑫，坐标广州。
 					我对前端很感兴趣，
@@ -21,10 +33,11 @@
 					 移动端页面，pc端页面。小的来说，商城，企业网站，评论，
 					 地图等都有涉及。
 				</view>
-    </view>
-    <view class='vessel'>
-      <view class='title'>我的经历<text style='width:170rpx;'></text></view>
-      <!-- <view class='underline'></view> -->
+    </view> -->
+    <!-- <view class='vessel'>
+      <view class='title'>
+        我的经历<text style='width:170rpx;'></text>
+      </view>
       <view class='experience'>
 					<view class='time'>
             <text class='l'></text>
@@ -43,23 +56,26 @@
             <text>在苏州亿柏嘉软件技术有限公司实习技术部/前端工程师本人在该公司主要负责整个页面的前端开发， 配合后台人员实现产品前端界面效果与功能。</text>
           </view>
 			</view>
-    </view>
+    </view> -->
     <view class='vessel'>
-      <view class='title'>我的作品<text style='width:170rpx;'></text></view>
-      <!-- <view class='underline'></view> -->
-      <view class='content'>
+      <!-- <view class='title'>我的作品<text style='width:170rpx;'></text></view> -->
+      <view class='works'>
         <swiper
+          class='swiper'
           indicator-dots="{{indicatorDots}}"
           autoplay="{{autoplay}}"
           interval="{{interval}}"
           duration="{{duration}}"
+          indicator-dots="true"
         >
           <block wx:for="{{imgUrls}}">
-            <swiper-item>
-              <image src="{{item}}" class="slide-image" width="355" height="150" />
+            <swiper-item class="swiper-item">
+              <view>我的</view>
+              <image src="{{item}}" class="slide-image" width="100%"/>
             </swiper-item>
           </block>
         </swiper>
+        
 			</view>
     </view>
   </view>

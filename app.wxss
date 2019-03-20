@@ -12,11 +12,12 @@
 } 
 @font-face {
   font-family: 'iconfont';  /* project id 962799 */
-  src: url('//at.alicdn.com/t/font_962799_k9nh0icvsh.eot');
-  src: url('//at.alicdn.com/t/font_962799_k9nh0icvsh.eot?#iefix') format('embedded-opentype'),
-  url('//at.alicdn.com/t/font_962799_k9nh0icvsh.woff') format('woff'),
-  url('//at.alicdn.com/t/font_962799_k9nh0icvsh.ttf') format('truetype'),
-  url('//at.alicdn.com/t/font_962799_k9nh0icvsh.svg#iconfont') format('svg');
+  src: url('//at.alicdn.com/t/font_962799_plkfnsa00j.eot');
+  src: url('//at.alicdn.com/t/font_962799_plkfnsa00j.eot?#iefix') format('embedded-opentype'),
+  url('//at.alicdn.com/t/font_962799_plkfnsa00j.woff2') format('woff2'),
+  url('//at.alicdn.com/t/font_962799_plkfnsa00j.woff') format('woff'),
+  url('//at.alicdn.com/t/font_962799_plkfnsa00j.ttf') format('truetype'),
+  url('//at.alicdn.com/t/font_962799_plkfnsa00j.svg#iconfont') format('svg');
 }
 .iconfont {
   font-family:"iconfont" !important;
@@ -29,4 +30,5 @@
 .icon-github:before{content: '\e712';}
 .icon-wechat:before{content: '\e600';}
 .icon-email:before{content: '\e631';}
+.icon-menu::before{content:'\e60e'}
 .plr{padding: 0 30rpx}
