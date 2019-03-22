@@ -10,30 +10,29 @@
 <body>
     <script>
         $(function(){
-            console.log(1);
             //get请求
             $.ajax({
                 type:'get',
-                url:'http://localhost:3001/123',
+                url:'http://localhost:3001/messageList',
                 success:function(data){
                     console.log(data);
                 },
                 error:function(err){
-                    console.log(err)
+                    console.log('err',err)
                 }
             })
             //post请求
-            $.ajax({
-                type:'post',
-                url:'http://localhost:3001/wdltest',
-                data:{name:'wdl',pass:'123'},
-                success:function(data){
-                    console.log(data);
-                },
-                error:function(err){
-                    console.log(err)
-                }
-            })
+            // $.ajax({
+            //     type:'post',
+            //     url:'http://localhost:3001/wdltest',
+            //     data:{name:'wdl',pass:'123'},
+            //     success:function(data){
+            //         console.log(data);
+            //     },
+            //     error:function(err){
+            //         console.log(err)
+            //     }
+            // })
         })
     </script>
 </body>

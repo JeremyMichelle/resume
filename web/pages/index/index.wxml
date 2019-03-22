@@ -3,16 +3,16 @@
   <view class="page-header">
     <view class='mask'>
       <view class='nav plr'>
-        <icon class='iconfont icon-menu'></icon>
+        <!-- <icon class='iconfont icon-menu'></icon> -->
       </view>
       <view class='header-photo'>
         <image src="{{userInfo.avatarUrl}}"></image>
       </view>
-      <view class='title'>Hello,I'm Rieko</view>
-      <view>Life doesn’t get easier, you just get stronger</view>
+      <view class='title'>Hello,I'm JeremyYao</view>
+      <view>Only food and love can't disappoint</view>
       <view>我叫郭壮鑫</view>
       <view>一名前端开发工程师</view>
-      <view>r@2019w.cn</view>
+      <!-- <view>r@2019w.cn</view> -->
       <!-- <view class='weui-flex icon-list'>
         <view class='weui-flex__item'>1</view>
         <view class='weui-flex__item'>2</view>
@@ -41,19 +41,19 @@
       <view class='experience'>
 					<view class='time'>
             <text class='l'></text>
-            <text class='r'>2017年/02月初–2017年 /07月初</text>
+            <text class='r'>2016年/7月初–2017年 /06月初</text>
           </view>
           <view class='addr'>
-            <text>在苏州亿柏嘉软件技术有限公司实习技术部/前端工程师本人在该公司主要负责整个页面的前端开发， 配合后台人员实现产品前端界面效果与功能。</text>
+            <text>在广州融大信息科技有限公司技术部/配合美工尽可能百分百实现页面布局，排版，页面的编辑，以及一些交互效果的实现。与后端开发团队紧密配合，确保代码有效对接，实现数据的绑定，以及日常的维护工作</text>
           </view>
 			</view>
       <view class='experience'>
 					<view class='time'>
             <text class='l'></text>
-            <text class='r'>2017年/02月初–2017年 /07月初</text>
+            <text class='r'>2017年/8月初–2019年/04月初</text>
           </view>
           <view class='addr'>
-            <text>在苏州亿柏嘉软件技术有限公司实习技术部/前端工程师本人在该公司主要负责整个页面的前端开发， 配合后台人员实现产品前端界面效果与功能。</text>
+            <text>在广州梵软信息科技发展有限公司技术部/APP前端工程师/本人在该公司主要负责整个APP页面的前端开发，配合UI人员实现产品前端界面效果，配合后端人员实现数据展示与交互功能以及维护工作/也参与PC网站管理系统的开发</text>
           </view>
 			</view>
     </view>
@@ -77,6 +77,33 @@
         </swiper>
         
 			</view>
+    </view>
+    <view class='vessel'>
+      <view class='title'>留言板<text style='width:124rpx;'></text></view>
+      <view class='message'>
+          <view class='write'>
+            <view>
+              <textarea maxlength="200" auto-height="true" value='{{form.content}}' bindinput="inputedit" data-obj="form" data-item="form.content"></textarea>
+            </view>
+            <view class='msg-btn'>
+              <button type="default" size="mini" bindtap='subMessage'>到此一游</button>
+            </view>
+          </view>
+					<view class='weui-flex second-title'>
+            <view class='weui-flex__item'>精选留言</view>
+            <!-- <view class='weui-flex__item r' bindtap='toMsg'>写留言</view> -->
+          </view>
+          <view class='weui-flex' wx:for="{{content}}" wx:key="unique">
+            <view class='weui-flex__item header'>
+              <image mode='widthFix' src="{{item.msg_header}}"></image>
+            </view>
+            <view class='weui-flex__item g'>
+              <view class='name-like'>{{item.msg_name}}<text>{{item.msg_time}}</text></view>
+              <view class='msg-content'>{{item.msg_content}}</view>
+
+            </view>
+          </view>
+				</view>
     </view>
   </view>
 </view>
