@@ -13,12 +13,12 @@
 } 
 @font-face {
   font-family: 'iconfont';  /* project id 962799 */
-  src: url('//at.alicdn.com/t/font_962799_plkfnsa00j.eot');
-  src: url('//at.alicdn.com/t/font_962799_plkfnsa00j.eot?#iefix') format('embedded-opentype'),
-  url('//at.alicdn.com/t/font_962799_plkfnsa00j.woff2') format('woff2'),
-  url('//at.alicdn.com/t/font_962799_plkfnsa00j.woff') format('woff'),
-  url('//at.alicdn.com/t/font_962799_plkfnsa00j.ttf') format('truetype'),
-  url('//at.alicdn.com/t/font_962799_plkfnsa00j.svg#iconfont') format('svg');
+  src: url('//at.alicdn.com/t/font_962799_s72hz659uy.eot');
+  src: url('//at.alicdn.com/t/font_962799_s72hz659uy.eot?#iefix') format('embedded-opentype'),
+  url('//at.alicdn.com/t/font_962799_s72hz659uy.woff2') format('woff2'),
+  url('//at.alicdn.com/t/font_962799_s72hz659uy.woff') format('woff'),
+  url('//at.alicdn.com/t/font_962799_s72hz659uy.ttf') format('truetype'),
+  url('//at.alicdn.com/t/font_962799_s72hz659uy.svg#iconfont') format('svg');
 }
 .iconfont {
   font-family:"iconfont" !important;
@@ -28,8 +28,9 @@
   -moz-osx-font-smoothing: grayscale;
 }
 /*本项目使用图标  */
-.icon-github:before{content: '\e712';}
+.icon-github:before{content: '\e691';}
 .icon-wechat:before{content: '\e600';}
-.icon-email:before{content: '\e631';}
-.icon-menu::before{content:'\e60e'}
+.icon-email:before{content: '\e737';}
+.icon-menu::before{content:'\e60e';}
+.icon-weibo:before{content: '\e65a';}
 .plr{padding: 0 30rpx}

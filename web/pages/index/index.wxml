@@ -1,12 +1,12 @@
 <view class="container">
   <!-- <image src='../../images/background.jpeg'></image> -->
-  <view class="page-header">
+  <view class="page-header" style='background-image:url({{bg}})'>
     <view class='mask'>
       <view class='nav plr'>
         <!-- <icon class='iconfont icon-menu'></icon> -->
       </view>
       <view class='header-photo'>
-        <image src="{{userInfo.avatarUrl}}"></image>
+        <image src="{{header}}"></image>
       </view>
       <view class='title'>Hello,I'm JeremyYao</view>
       <view>Only food and love can't disappoint</view>
@@ -14,10 +14,18 @@
       <view>一名前端开发工程师</view>
       <!-- <view>r@2019w.cn</view> -->
       <!-- <view class='weui-flex icon-list'>
-        <view class='weui-flex__item'>1</view>
-        <view class='weui-flex__item'>2</view>
-        <view class='weui-flex__item'>3</view>
-        <view class='weui-flex__item'>4</view>
+        <view class='weui-flex__item'>
+          <icon class='iconfont icon-wechat'></icon>
+        </view>
+        <view class='weui-flex__item'>
+          <icon class='iconfont icon-github'></icon>
+        </view>
+        <view class='weui-flex__item'>
+          <icon class='iconfont icon-email'></icon>
+        </view>
+        <view class='weui-flex__item'>
+          <icon class='iconfont icon-weibo'></icon>
+        </view>
       </view> -->
     </view>
   </view>
@@ -70,7 +78,7 @@
         >
           <block wx:for="{{imgUrls}}">
             <swiper-item class="swiper-item">
-              <view>我的</view>
+              <!-- <view>我的</view> -->
               <image src="{{item}}" class="slide-image" width="100%"/>
             </swiper-item>
           </block>
@@ -89,7 +97,7 @@
               <button type="default" size="mini" bindtap='subMessage'>到此一游</button>
             </view>
           </view>
-					<view class='weui-flex second-title'>
+					<view class='weui-flex second-title' wx:if="{{content.length!=0}}">
             <view class='weui-flex__item'>精选留言</view>
             <!-- <view class='weui-flex__item r' bindtap='toMsg'>写留言</view> -->
           </view>

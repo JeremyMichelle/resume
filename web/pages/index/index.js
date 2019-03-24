@@ -5,15 +5,19 @@ Page({
     background: ['demo-text-1', 'demo-text-2', 'demo-text-3'],
     userInfo: {},
     imgUrls: [
-      'https://images.unsplash.com/photo-1551334787-21e6bd3ab135?w=640',
-      'https://images.unsplash.com/photo-1551214012-84f95e060dee?w=640',
-      'https://images.unsplash.com/photo-1551446591-142875a901a1?w=640'
+      Config.basePath+'imgs/g1.png',
+      Config.basePath + 'imgs/g2.jpeg',
+      Config.basePath + 'imgs/g3.jpeg',
+      Config.basePath + 'imgs/g4.jpeg',
+      Config.basePath + 'imgs/g5.jpeg'
     ],
     indicatorDots: false,
     autoplay: true,
     interval: 5000,
     duration: 1000,
     content:[],
+    header: Config.basePath+'imgs/header.png',
+    bg: Config.basePath + 'imgs/bg.jpeg',
     form:{name:'',time:'',header:'',content:''}
   },
   onLoad: function () {
@@ -31,7 +35,7 @@ Page({
   subMessage: function () {
     let that = this;
     console.log('this.data.form.content', this.data.form.content.length);
-    if (this.data.form.content == ' ' || this.data.form.content.length!=0){
+    if (this.data.form.content == '' || this.data.form.content.length==0){
       wx.showToast({ title: '内容不能为空', icon:'none'});
       return;
     }
