@@ -1,4 +1,5 @@
-<view class="container">
+<!-- <view class="container"> -->
+<scroll-view scroll-y="true" style='height:{{warpHeight}}' bindscrolltolower="upper">
   <!-- <image src='../../images/background.jpeg'></image> -->
   <view class="page-header" style='background-image:url({{bg}})'>
     <view class='mask'>
@@ -16,7 +17,7 @@
       <!-- <view class='weui-flex icon-list'>
         <view class='weui-flex__item'>
           <icon class='iconfont icon-wechat'></icon>
-        </view>
+        </view>1685+280
         <view class='weui-flex__item'>
           <icon class='iconfont icon-github'></icon>
         </view>
@@ -101,17 +102,17 @@
             <view class='weui-flex__item'>精选留言</view>
             <!-- <view class='weui-flex__item r' bindtap='toMsg'>写留言</view> -->
           </view>
-          <view class='weui-flex msg_list' wx:for="{{content}}" wx:key="unique">
+            <view class='weui-flex msg_list' wx:for="{{content}}" wx:key="unique">
             <view class='weui-flex__item header'>
               <image mode='widthFix' src="{{item.header}}"></image>
             </view>
             <view class='weui-flex__item g'>
               <view class='name-like'>{{item.name}}<text>{{item.time}}</text></view>
               <view class='msg-content'>{{item.content}}</view>
-
             </view>
           </view>
 				</view>
     </view>
   </view>
-</view>
+</scroll-view>
+<!-- </view> -->

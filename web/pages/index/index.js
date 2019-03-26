@@ -1,5 +1,6 @@
 const app = getApp()
 import Config from '../../etc/config.js';
+import Util from '../../utils/util.js';
 Page({
   data: {
     background: ['demo-text-1', 'demo-text-2', 'demo-text-3'],
@@ -16,6 +17,7 @@ Page({
     interval: 5000,
     duration: 1000,
     content:[],
+    warpHeight:'',
     header: Config.basePath+'imgs/header.png',
     bg: Config.basePath + 'imgs/bg.jpeg',
     form:{name:'',time:'',header:'',content:''}
@@ -31,7 +33,14 @@ Page({
       }
     })
     this.getMessageList();
+    var self = this;
+      wx.getSystemInfo({
+        success: function (res) {
+          that.setData({ warpHeight: res.windowHeight+'px'})
+        }, fail: function (res) { }
+      })
   },
+  //提交留言表单
   subMessage: function () {
     let that = this;
     console.log('this.data.form.content', this.data.form.content.length);
@@ -52,8 +61,11 @@ Page({
   getMessageList: function () {
     let that = this;
     Config.getMsgList().then(function(data){
-      console.log('res.data', data);
-      that.setData({ content:data.data});
+      let temp = data.data;
+      temp.forEach(function (val,i,arr) {
+        temp[i].time = val.time.split('.')[0].replace('T',' ');
+      });
+      that.setData({ content:temp});
     },function(error){
       console.log('error', error);
     })
@@ -66,5 +78,8 @@ Page({
     this.setData({
       'form.content': value
     });
-  }
+  },
+  upper(e) {
+    console.log(e)
+  },
 })
