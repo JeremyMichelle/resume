@@ -149,6 +149,9 @@ height: 560rpx;
 .message .header>image{
   width: 100%; 
 }
+.message>.write{
+  margin-bottom: 40rpx;
+}
 .message>.write>view:first-child{
   border: 1rpx solid #333;
   border-radius: 20rpx;
@@ -178,6 +181,9 @@ height: 560rpx;
 }
 .message .second-title{
   margin-bottom: 20rpx;
+}
+.message .msg_list{
+  margin-bottom: 40rpx;
 }
 .message .msg-btn text{
   border: 10rpx solid red;
