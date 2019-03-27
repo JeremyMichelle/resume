@@ -58,7 +58,7 @@
     </view>
     <view class='vessel'>
       <view class='title'>
-        我的经历<text style='width:170rpx;'></text>
+        工作经验<text style='width:170rpx;'></text>
       </view>
       <view class='experience'>
 					<view class='time'>
