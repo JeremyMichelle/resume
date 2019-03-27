@@ -7,7 +7,10 @@
   "window": {
     "backgroundTextStyle": "light",
     "navigationBarBackgroundColor": "#fff",
-    "navigationBarTitleText": "郭壮鑫",
+    "navigationBarTitleText": "郭壮鑫个人简历",
     "navigationBarTextStyle": "black"
+  },
+  "networkTimeout": {
+    "request": 10000
   }
 }

@@ -1,5 +1,4 @@
-<!-- <view class="container"> -->
-<scroll-view scroll-y="true" style='height:{{warpHeight}}' bindscrolltolower="upper">
+<view class="container">
   <!-- <image src='../../images/background.jpeg'></image> -->
   <view class="page-header" style='background-image:url({{bg}})'>
     <view class='mask'>
@@ -36,7 +35,7 @@
       <view class='content'>
 					您好，我叫郭壮鑫，坐标广州。
 					我对前端很感兴趣，
-					今后的职业规划是朝着全栈发展，目前在学小程序、AnjularJs,vue。
+					今后的职业规划是朝着全栈发展，目前在学小程序,vue,
 					 工作有3年了,本人在公司主要负责整个页面的前端开发，
 					 配合后台人员实现产品前端界面效果与功能。写过响应式页面，
 					 移动端页面，pc端页面。小的来说，商城，企业网站，评论，
@@ -92,15 +91,16 @@
       <view class='message'>
           <view class='write'>
             <view>
-              <textarea maxlength="200" auto-height="true" value='{{form.content}}' bindinput="inputedit" data-obj="form" data-item="form.content"></textarea>
+              <textarea placeholder="请输入留言内容，暂不支持表情" maxlength="200" auto-height="true" value='{{form.content}}' bindinput="inputedit" data-obj="form" data-item="form.content"></textarea>
             </view>
             <view class='msg-btn'>
-              <button type="default" size="mini" bindtap='subMessage'>到此一游</button>
+              <button type="default" size="mini" open-type='getUserInfo' bindgetuserinfo="subMessage">到此一游</button>
+              <!-- <button type="default" size="mini" open-type='getUserInfo' bindgetuserinfo="accredit">授权留言</button> -->
             </view>
           </view>
-					<view class='weui-flex second-title' wx:if="{{content.length!=0}}">
-            <view class='weui-flex__item'>精选留言</view>
-            <!-- <view class='weui-flex__item r' bindtap='toMsg'>写留言</view> -->
+					<view class='weui-flex second-title'>
+            <view class='weui-flex__item'>留言列表</view>
+            <view class='weui-flex__item r' bindtap='toMsg'></view>
           </view>
             <view class='weui-flex msg_list' wx:for="{{content}}" wx:key="unique">
             <view class='weui-flex__item header'>
@@ -114,5 +114,16 @@
 				</view>
     </view>
   </view>
-</scroll-view>
-<!-- </view> -->
+  <view class="page__bd">
+        <view class="weui-loadmore" wx:if="{{!lastPage}}">
+            <view class="weui-loading"></view>
+            <view class="weui-loadmore__tips">正在加载</view>
+        </view>
+        <view class="weui-loadmore weui-loadmore_line" wx:if="{{lastPage}}">
+            <view class="weui-loadmore__tips weui-loadmore__tips_in-line">暂无数据</view>
+        </view>
+        <!-- <view class="weui-loadmore weui-loadmore_line weui-loadmore_dot">
+            <view class="weui-loadmore__tips weui-loadmore__tips_in-line weui-loadmore__tips_in-dot"></view>
+        </view> -->
+    </view>
+</view>

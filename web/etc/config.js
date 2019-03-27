@@ -21,7 +21,7 @@ export default {
           'content-type': 'application/json' // 默认值
         },
         success(res) {
-          resolve(res);
+          resolve(res.data);
         },
         fail(error) {
           reject(error);

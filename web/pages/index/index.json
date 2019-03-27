@@ -1,5 +1,8 @@
 {
   "usingComponents": {
     "myself-information": "/components/myself-information/myself-information"
-  }
+  },
+  "enablePullDownRefresh":true,
+  "backgroundTextStyle":"dark",
+  "onReachBottomDistance":10
 }
