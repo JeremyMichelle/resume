@@ -45,8 +45,7 @@
     <view class='vessel'>
       <view class='title'>技能掌握<text style='width:170rpx;'></text></view>
       <view class='content' style='text-indent:0;'>
-					<text>
-            1：精通HTML+CSS、可以编写各种静态页面，能够手写代码，能够实现各种动效，能够解决常见浏览器兼容性问题。熟悉掌握JavaScript，dom，bom等，可以实现动态交互效果，熟悉掌握：闭包，面向对象；
+					<text>1：精通HTML+CSS、可以编写各种静态页面，能够手写代码，能够实现各种动效，能够解决常见浏览器兼容性问题。熟悉掌握JavaScript，dom，bom等，可以实现动态交互效果，熟悉掌握：闭包，面向对象；
 2：熟悉掌握：原生ajax，能够异步访问数据库，能够解决一些跨域问题；
 3：熟悉掌握：微信小程序、angularjs、element-ui、jQuery、vue、ionic等框架和库，例如：能用微信小程序开发，能够使用jQuery简化dom操作，能用element-ui+vue组件开发管理系统，能用ionic开发混合app，能够使用ng实现mvc模式的增删改查；
 4：熟悉HTML5新特性，能够实现基本绘图，地理绘图，SVG绘图；
@@ -140,4 +139,5 @@
             <view class="weui-loadmore__tips weui-loadmore__tips_in-line weui-loadmore__tips_in-dot"></view>
         </view> -->
     </view>
+    <!-- <loading></loading> -->
 </view>

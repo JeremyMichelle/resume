@@ -7,7 +7,7 @@ Page({
     background: ['demo-text-1', 'demo-text-2', 'demo-text-3'],
     userInfo: {},
     imgUrls: [
-      Config.basePath+'imgs/g1.png',
+      Config.basePath + 'imgs/g1.png',
       Config.basePath + 'imgs/g2.jpeg',
       Config.basePath + 'imgs/g3.jpeg',
       Config.basePath + 'imgs/g4.jpeg',
@@ -28,7 +28,7 @@ Page({
   },
   onLoad: function () {
     var that = this
-    wx.authorize({ scope: 'scope.userInfo', success: function () { }, fail: function () { } });
+    // wx.authorize({ scope: 'scope.userInfo', success: function () { }, fail: function () { } });
     // wx.getUserInfo({
     //   success: function (res) {
     //     that.setData({

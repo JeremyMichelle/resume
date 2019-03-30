@@ -2,7 +2,8 @@
   "pages": [
     "pages/index/index",
     "pages/logs/logs",
-    "pages/message/message"
+    "pages/message/message",
+    "components/loading/loading"
   ],
   "window": {
     "backgroundTextStyle": "light",
@@ -12,5 +13,8 @@
   },
   "networkTimeout": {
     "request": 10000
+  },
+  "usingComponents": {
+    "loading": "components/loading/loading"
   }
 }
