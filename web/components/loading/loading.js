@@ -11,13 +11,15 @@ Component({
    * 组件的初始数据
    */
   data: {
-    loadingHidden: true
+    loadingHidden: true,
+    y:0
   },
 
   /**
    * 组件的方法列表
    */
   methods: {
+    
     onPullDownRefresh: function () {
       this.setData({
         loadingHidden: false

@@ -2,7 +2,7 @@
     <view class="loading" hclassden="{{loadingHclassden}}">
         <view class="loading-center">
             <view class="loading-center-absolute">
-                <view class="object object_one"></view>
+                <view class="object object_one" style='transform: translateY({{y}})'></view>
                 <view class="object object_two"></view>
                 <view class="object object_three"></view>
                 <view class="object object_four"></view>

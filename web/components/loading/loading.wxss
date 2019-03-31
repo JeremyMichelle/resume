@@ -20,9 +20,9 @@
     width: 150px;
     margin-top: -75px;
     margin-left: -75px; 
-    -ms-transform: rotate(45deg); 
+    /* -ms-transform: rotate(45deg); 
       -webkit-transform: rotate(45deg);
-      transform: rotate(45deg); 
+      transform: rotate(45deg);  */
   }
   .object{
     width: 20px;
@@ -40,51 +40,71 @@
     animation: object_one 2s infinite;
     -webkit-animation-delay: 0.2s; 
       animation-delay: 0.2s; 
+      top: 0;
+      left: 23px;
     }
   .object_two {
     -webkit-animation: object_two 2s infinite;
     animation: object_two 2s infinite;
     -webkit-animation-delay: 0.3s; 
       animation-delay: 0.3s; 
+      top: 0;
+      left: 44px;
     }
   .object_three {
     -webkit-animation: object_three 2s infinite;
     animation: object_three 2s infinite;
     -webkit-animation-delay: 0.4s; 
       animation-delay: 0.4s; 
+      top: 0;
     }
   .object_four {
     -webkit-animation: object_four 2s infinite;
     animation: object_four 2s infinite;
     -webkit-animation-delay: 0.5s; 
       animation-delay: 0.5s; 
+      top: 21px;
+      left: 23px;
   }
   .object_five {
     -webkit-animation: object_five 2s infinite;
     animation: object_five 2s infinite;
     -webkit-animation-delay: 0.6s; 
       animation-delay: 0.6s; 
+      top: 21px;
+      left: 44px;
   }
   .object_six {
     -webkit-animation: object_six 2s infinite;
     animation: object_six 2s infinite;
     -webkit-animation-delay: 0.7s; 
       animation-delay: 0.7s; 
+      top: 21px;
   }
   .object_seven {
     -webkit-animation: object_seven 2s infinite;
     animation: object_seven 2s infinite;
     -webkit-animation-delay: 0.8s; 
       animation-delay: 0.8s; 
+      top: 42px;
+      left: 23px;
   }
   .object_eight {
     -webkit-animation: object_eight 2s infinite;
     animation: object_eight 2s infinite;
      -webkit-animation-delay: 0.9s; 
       animation-delay: 0.9s; 
+      top: 42px;
+      left: 44px;
   }
   .object_big{
-    position: absolute;
+    -webkit-animation: object_eight 2s infinite;
+    animation: object_eight 2s infinite;
+     -webkit-animation-delay: 0.9s; 
+      animation-delay: 0.9s; 
+      top: 42px;
+      /* left: 0px; */
+    /* position: absolute;
     width: 50px;
     height: 50px;
     left: 50px;
@@ -92,9 +112,9 @@
     -webkit-animation: object_big 2s infinite;
     animation: object_big 2s infinite;
     -webkit-animation-delay: 0.5s; 
-      animation-delay: 0.5s; 
+      animation-delay: 0.5s;  */
   } 
-  @-webkit-keyframes object_big {
+  /* @-webkit-keyframes object_big {
    50% { -webkit-transform: scale(0.5); }
   }
   @keyframes object_big {
@@ -174,4 +194,4 @@
       transform: translate(-65px,0) ;
       -webkit-transform: translate(-65px,0) ;
     } 
-  }
+  } */
