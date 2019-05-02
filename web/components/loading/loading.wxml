@@ -1,17 +1,5 @@
 <!-- <view class="container"> -->
-    <view class="loading" hclassden="{{loadingHclassden}}">
-        <view class="loading-center">
-            <view class="loading-center-absolute">
-                <view class="object object_one" style='transform: translateY({{y}})'></view>
-                <view class="object object_two"></view>
-                <view class="object object_three"></view>
-                <view class="object object_four"></view>
-                <view class="object object_five"></view>
-                <view class="object object_six"></view>
-                <view class="object object_seven"></view>
-                <view class="object object_eight"></view>
-                <view class="object object_big"></view>
-            </view>
-        </view>
-    </view>
+    <!-- <view class="loading" hclassden="{{loadingHclassden}}"> -->
+        <image class='loading' src='../../images/tetris.gif'></image>
+    <!-- </view> -->
 <!-- </view> -->

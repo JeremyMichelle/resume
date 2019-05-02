@@ -2,7 +2,6 @@
   "pages": [
     "pages/index/index",
     "pages/logs/logs",
-    "pages/message/message",
     "components/loading/loading"
   ],
   "window": {

@@ -83,13 +83,13 @@
       <view class='works'>
         <swiper
           class='swiper'
-          indicator-dots="{{indicatorDots}}"
-          autoplay="{{autoplay}}"
-          interval="{{interval}}"
-          duration="{{duration}}"
+          indicator-dots="false"
+          autoplay="true"
+          interval="5000"
+          duration="1000"
           indicator-dots="true"
         >
-          <block wx:for="{{imgUrls}}">
+          <block wx:for="{{imgUrls}}" wx:key="unique">
             <swiper-item class="swiper-item">
               <!-- <view>我的</view> -->
               <image src="{{item}}" class="slide-image" width="100%"/>
@@ -139,5 +139,5 @@
             <view class="weui-loadmore__tips weui-loadmore__tips_in-line weui-loadmore__tips_in-dot"></view>
         </view> -->
     </view>
-    <loading></loading>
+    <!-- <loading id="load" wx:if="{{isLoading}}"></loading> -->
 </view>
